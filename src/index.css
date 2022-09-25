@@ -1,0 +1,551 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('/public/img/pattern.png');
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*Nav*/
+.menu{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: #f7f1ef; 
+  top: 0;
+}
+.menulogo{
+  height: 70px;
+  margin-left: 20px;;
+}
+.menudireita{
+  text-align: right;
+  vertical-align: middle;
+  margin-top: -55px;
+}
+.menudireita button{
+  border-radius: 20px;
+  border:none;
+  background-color: #88e39a;
+  color: white;
+  padding: 10px;
+  width: 80px;
+  margin-right: 40px;
+}
+.menudireita button:hover{
+  cursor:pointer;
+  background-color:#6fdde3;
+  color: white;
+  font-weight: bold;
+  transition: all 0.25s ease;
+}
+.menudireita button:active {
+  background: transparent;
+  border: 1px solid #88e39a;
+  color: #49332d;
+}
+
+.navlogadospan{
+  margin-right: 20px;
+}
+.navlogadospan span{
+margin-left: 15px;
+color: #49332d;
+font-weight: bold;
+}
+.navlogadospan button{
+  width: auto;
+}
+
+.navlogadospan button:hover{
+  font-weight: lighter;
+  transition: all 0.25s ease;
+}
+
+.navlogadospan button:active {
+  transition: all 0.25s ease;
+}
+
+.navbotaoselecionado button {
+  background: transparent;
+  border: 1px solid #88e39a;
+  color: #49332d;
+} 
+
+.navbotaosair{
+  background-color: #6fdde3!important;
+
+}
+.navbotaosair:hover{
+  background-color: #ebc750;
+}
+
+/*login*/
+.loginmain{
+  width: 800px;
+  height: 600px;
+  background-color: #f7f1ef;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  display: flex;
+  background-color: rgb(247, 241, 239, .8);
+    background-image: linear-gradient(rgb(247, 241, 239, 1), rgb(155, 97, 189,0));
+}
+
+.loginmain span{
+  color:#49332d
+}
+
+.loginmaininputs{
+  width: 100%;
+  padding-left: 40px;
+  
+
+}
+
+.loginmaininputs h1{
+  text-align: center;
+  color: #6fdde3;
+}
+
+.loginmaininputs input{
+  border: none;
+  outline: 1px #88e39a;
+  border-radius: 20px;
+  width: 90%;
+  padding: 10px;
+  color:#49332d;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.loginmaininputs button{
+  border-radius: 20px;
+  border:none;
+  background-color: #88e39a;
+  color: white;
+  padding: 10px;
+  width: 95%;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.loginmaininputs button:hover{
+  cursor:pointer;
+  background-color:#6fdde3;
+  color: white;
+  font-weight: bold;
+  transition: all 0.25s ease;
+}
+.loginmaininputs button:active {
+  background: transparent;
+  border: 1px solid #88e39a;
+  color: #49332d;
+}
+
+.loginmaininputs label{
+  color: #49332d;
+}
+
+.loginmainilust{
+  height: 600px;
+}
+
+/* Conteúdo */
+
+.contconteudo{
+  margin-top: 90px;
+}
+
+/*Cadastro de Medicamentos*/
+.contcadastromedicamentos{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  padding: 30px;
+}
+
+/*Cadastro de Farmácia*/
+
+.contcadastrofarmacia{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(247, 241, 239);;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+ 
+}
+
+.contcadastrofarmacia h1{
+  color: #6fdde3;
+  font-size: 22px;
+}
+
+.cadastrofarmimages{
+  text-align: right;
+}
+
+.cadastrofarmesquerda{
+  text-align: left;
+  padding: 20px;
+  color:#49332d
+}
+
+.cadastrofarmesquerda input{
+  border-radius: 20px;
+  border: none;
+  padding: 7px;
+  color:#49332d;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  outline: 3px #88e39a;
+  width: 90%;
+  
+}
+
+.cadastrofarmesquerda button{
+    border-radius: 20px;
+    border:none;
+    background-color: #88e39a;
+    color: white;
+    padding: 10px;
+    width: 95%;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  
+  .cadastrofarmesquerda button:hover{
+    cursor:pointer;
+    background-color:#6fdde3;
+    color: white;
+    font-weight: bold;
+    transition: all 0.25s ease;
+  }
+  .cadastrofarmesquerda button:active {
+    background: transparent;
+    border: 1px solid #88e39a;
+    color: #49332d;
+  }
+
+  /* Cadastro de Medicamento */
+
+  .contcadastromedicamento{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(247, 241, 239);;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    
+  }
+
+  .cadastromedesquerda{
+    text-align: left;
+    padding: 20px;
+    color:#49332d
+  }
+
+  .contcadastromedicamento h1{
+    color: #6fdde3;
+    font-size: 22px;
+  }
+
+  .cadastromedesquerda input{
+    border-radius: 20px;
+    border: none;
+    padding: 7px;
+    color:#49332d;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    outline: 3px #88e39a;
+    width: 90%;
+    
+  }
+  
+  .cadastromedesquerda button{
+      border-radius: 20px;
+      border:none;
+      background-color: #88e39a;
+      color: white;
+      padding: 10px;
+      width: 95%;
+      margin-right: 40px;
+      margin-top: 10px;
+    }
+    
+    .cadastromedesquerda button:hover{
+      cursor:pointer;
+      background-color:#6fdde3;
+      color: white;
+      font-weight: bold;
+      transition: all 0.25s ease;
+    }
+    .cadastromedesquerda button:active {
+      background: transparent;
+      border: 1px solid #88e39a;
+      color: #49332d;
+    }
+    .cadastromedesquerda select{
+      border-radius: 20px;
+    border: none;
+    padding: 7px;
+    color:#49332d;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    outline: 3px #88e39a;
+    width: 90%;
+    }
+    .cadastromedesquerda textarea{
+    border: none;
+    padding: 7px;
+    color:#49332d;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    outline: 3px #88e39a;
+    width: 90%;
+    height: 130px;
+    }
+
+    /* Lista de Medicamentos */
+
+ .contlistamedicamentos{
+    height: 100%;
+    background-color: rgb(247, 241, 239);;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+   
+  }
+  .contlistamedicamentos h1{
+    color: #6fdde3;
+    font-size: 22px;
+  }
+
+  .listamedicamentos{
+    padding: 20px;
+    color:#49332d;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .continterno{
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    
+  }
+
+  .continterno button{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border:none;
+    background-color: #88e39a;
+    color: white;
+    padding: 10px;
+    width: 75%;
+    margin-top: 10px;
+  }
+  
+  .continterno button:hover{
+    cursor:pointer;
+    background-color:#6fdde3;
+    color: white;
+    font-weight: bold;
+    transition: all 0.25s ease;
+  }
+  .continterno button:active {
+    background: transparent;
+    border: 1px solid #88e39a;
+    color: #49332d;
+  }
+  .contlistamedicamentosheader{
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .contlistamedicamentosheader input{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    outline: 3px #88e39a;
+
+  }
+
+  /*Modal*/
+
+  .modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modalconteudo{
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    color: #49332d;
+  }
+  .modalinfo{
+   text-align: left;
+  }
+  .modalinfoesquerda{
+    text-align: left;
+    display: inline-block;
+
+  }
+  .modalinfodireita{
+    text-align: right;
+    float: right;
+  }
+  .modaldescri{
+    text-align: justify;
+  }
+
+  .modalconteudo button{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border:none;
+    background-color: #88e39a;
+    color: white;
+    padding: 10px;
+    width: 75%;
+    margin-top: 20px;
+  }
+  
+  .modalconteudo button:hover{
+    cursor:pointer;
+    background-color:#6fdde3;
+    color: white;
+    font-weight: bold;
+    transition: all 0.25s ease;
+  }
+  .modalconteudo button:active {
+    background: transparent;
+    border: 1px solid #88e39a;
+    color: #49332d;
+  }
+  .modalnegrito{
+    font-weight: bold;
+  }
+
+/*Não encontrado*/
+.contnaoencontrado{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contnaoencontrado button{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border:none;
+  background-color: #88e39a;
+  color: white;
+  padding: 10px;
+  width: 25%;
+  margin-top: 20px;
+}
+
+.contnaoencontrado button:hover{
+  cursor:pointer;
+  background-color:#6fdde3;
+  color: white;
+  font-weight: bold;
+  transition: all 0.25s ease;
+}
+.contnaoencontrado button:active {
+  background: transparent;
+  border: 1px solid #88e39a;
+  color: #49332d;
+} 
+
+/*Cadastro de login*/
+
+.contcadastrologin{
+  height: 100%;
+  background-color: rgb(247, 241, 239);;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  display:flex;
+}
+
+.cadastrologinesquerda{
+  text-align: left;
+    padding: 20px;
+    color:#49332d;
+    width: 100%;
+}
+
+.contcadastrologin img{
+  height: 600px;
+}
+
+.cadastrologinesquerda button{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border:none;
+  background-color: #88e39a;
+  color: white;
+  padding: 10px;
+  width: 95%;
+  margin-top: 20px;
+}
+
+.cadastrologinesquerda button:hover{
+  cursor:pointer;
+  background-color:#6fdde3;
+  color: white;
+  font-weight: bold;
+  transition: all 0.25s ease;
+}
+.cadastrologinesquerda button:active {
+  background: transparent;
+  border: 1px solid #88e39a;
+  color: #49332d;
+} 
+
+.cadastrologinesquerda input{
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  width: 95%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  outline: 3px #88e39a;
+
+}
+
+.cadastrologinesquerda h1{
+  text-align: center;
+  color: #6fdde3;
+}

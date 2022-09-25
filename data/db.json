@@ -1,0 +1,118 @@
+{
+  "farmacias": [
+    {
+      "razaoSocial": "Farmácias Feliz LTDA",
+      "cnpj": "56329856412365",
+      "nomeFantasia": "Farmácias Feliz",
+      "email": "farmácias@feliz.com",
+      "telefone": "5136541563",
+      "celular": "51980546395",
+      "endereco": {
+        "cep": "96816501",
+        "logradouro": "Avenida Independência",
+        "numero": "129",
+        "bairro": "Renascença",
+        "cidade": "Santa Cruz do Sul",
+        "estado": "RS",
+        "complemento": "Em frente ao posto",
+        "geolocalizacao": {
+          "latitude": "-29.7001256",
+          "longitude": "-52.4429981"
+        }
+      },
+      "id": "iihHZhN"
+    },
+    {
+      "razaoSocial": "Farmácia Alegre LTDA",
+      "cnpj": "25658965453586",
+      "nomeFantasia": "Farmácia Alegre",
+      "email": "farmacia@Alegre.com",
+      "telefone": "5196567456",
+      "celular": "51936584589",
+      "endereco": {
+        "cep": "90200344",
+        "logradouro": "Rua Abraham Isdra",
+        "numero": "123",
+        "bairro": "Anchieta",
+        "cidade": "Porto Alegre",
+        "estado": "RS",
+        "complemento": "Em frente ao posto",
+        "geolocalizacao": {
+          "latitude": "-29.9834383",
+          "longitude": "-51.1747696"
+        }
+      },
+      "id": "emt3Odk"
+    }
+  ],
+  "medicamentos": [
+    {
+      "nomeMed": "Olanzapina",
+      "nomeLab": "EMS",
+      "dosagem": "10mg",
+      "descriMed": "indicado para tratar esquizofrenia e outras psicoses; de quadros de mania aguda ou mistos de transtorno bipolar seja em monoterapia ou em conjunto com como lítio ou valproato.",
+      "preco": "30,99",
+      "tipoMed": "controlado",
+      "id": "RqhaUjV"
+    },
+    {
+      "nomeMed": "Paracetamol",
+      "nomeLab": "Neoquímica",
+      "dosagem": "750mg",
+      "descriMed": "Paracetamol é um medicamento indicado para o tratamento de febre e também colabora com auxílio temporário a dores leves e moderadas.\n\nPode ser utilizado na redução de dores relacionadas à resfriados, como dor de cabeça e dor de garganta. Ainda é efetivo para reduzir o desconforto da dor de dente.\n\nAinda é efetivo no combate a dores musculares, dores relacionadas a artrite e cólicas menstruais.",
+      "preco": "6,49",
+      "tipoMed": "comum",
+      "id": "VUawsjb"
+    },
+    {
+      "nomeMed": "Cloridrato de Fluoxetina",
+      "nomeLab": "Legrand",
+      "dosagem": "20mg",
+      "descriMed": "A Fluoxetina 20mg Genérico Cimed 28 Cápsulas aumenta os níveis de serotonina no cérebro, resultando em melhora dos sintomas da depressão, associada ou não à ansiedade, da bulimia nervosa, do transtorno obsessivo-compulsivo (TOC) e do transtorno disfórico pré-menstrual.",
+      "preco": "15,09",
+      "tipoMed": "controlado",
+      "id": "ZIFTkM5"
+    },
+    {
+      "nomeMed": "Dipirona Sódica",
+      "nomeLab": "EMS",
+      "dosagem": "500mg",
+      "descriMed": "Dipirona Sódica 500mg EMS é um medicamento analgésico e antitérmico, sendo utilizado no alívio da dor e da febre. Seu efeito inicia-se de 30 a 60 minutos após a administração oral e tem duração de aproximadamente 4 horas.",
+      "preco": "4,49",
+      "tipoMed": "comum",
+      "id": "LWW1yK5"
+    },
+    {
+      "nomeMed": "Aripiprazol",
+      "nomeLab": "Sandoz",
+      "dosagem": "10mg",
+      "descriMed": "Aripiprazol é indicado para o tratamento de esquizofrenia.",
+      "preco": "100,47",
+      "tipoMed": "controlado",
+      "id": "Y4Ec7DJ"
+    },
+    {
+      "nomeMed": "Fumarato de Quetiapina",
+      "nomeLab": "Actavis",
+      "dosagem": "25mg",
+      "descriMed": "Fumarato de Quetiapina 25mg Actavis 30 Comprimidos é um medicamento utilizado para tratar esquizofrenia; episódios de mania ou de depressão decorrentes do transtorno bipolar. Uso adulto e pediátrico. Venda somente sob prescrição médica e retenção da receita.",
+      "preco": "25,99",
+      "tipoMed": "controlado",
+      "id": "QJNKlWz"
+    }
+  ],
+  "login": [
+    {
+      "id": "abc",
+      "nome": "Gabee Schoenherr",
+      "login": "gabee@farmacia.com",
+      "senha": "123abcde"
+    },
+    {
+      "nome": "Louise Blancher",
+      "login": "louise@farmacia.com",
+      "senha": "123plkjh",
+      "id": "H5_xU6y"
+    }
+  ]
+}
