@@ -14,13 +14,6 @@ As tecnologias utilizadas foram: JavaScript, React, HTML5 e CSS3.
 <br>
 As artes e design foram criadas por mim utilizando o Adobe Photoshop.
 
----
-
-<h2>💊Como utilizar </h2>
-Clone o diretório para o computador e execute no navegador da sua preferência o index.html.
-
----
-
 <h2>🩹Tipo de licença </h2>
 Licença MIT
 
