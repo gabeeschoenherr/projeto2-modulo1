@@ -30,11 +30,12 @@ function CadastroFarmacia() {
   const navigate = useNavigate();
 
   const[mensagemCadastroCep, setMensagemCadastroCep] = useState(false);
+
+  // faltou inserir a mensagem de cadastro de geolocalização
   const[mensagemCadastroGeo, setMensagemCadastroGeo] = useState(false);
 
   const cadastraFarmacia = (e) => {
     e.preventDefault();
-    console.log(farmaciaCadastro);
     fetch("http://localhost:3001/farmacias", {
       method: "POST",
       headers: {
@@ -63,8 +64,9 @@ function CadastroFarmacia() {
 
   
   useEffect(() => {
-    if (farmaciaCadastro.endereco.cep.length == 8) {
-    let cepB = fetch("https://viacep.com.br/ws/" + farmaciaCadastro.endereco.cep + "/json/")
+    if (farmaciaCadastro.endereco.cep.length === 8) {
+      // não é necessário colocar o fetch em uma variável, pois não vamos usar ela
+    fetch("https://viacep.com.br/ws/" + farmaciaCadastro.endereco.cep + "/json/")
     .then((response) => {
       return response.json();
     })
@@ -73,7 +75,6 @@ function CadastroFarmacia() {
       farmaciaCadastro.endereco.bairro = cep.bairro;
       farmaciaCadastro.endereco.cidade = cep.localidade;
       farmaciaCadastro.endereco.estado = cep.uf;
-      console.log(cep)
       setMensagemCadastroCep(true)
 
     });
@@ -84,14 +85,14 @@ function CadastroFarmacia() {
     e.preventDefault();
     e.preventDefault()
     if(farmaciaCadastro.endereco.logradouro != ""){
-      let geoB = fetch(`https://nominatim.openstreetmap.org/search?q=${farmaciaCadastro.endereco.logradouro}+${farmaciaCadastro.endereco.cidade}&format=json`)
+      // não é necessário colocar o fetch em uma variável, pois não vamos usar ela
+      fetch(`https://nominatim.openstreetmap.org/search?q=${farmaciaCadastro.endereco.logradouro}+${farmaciaCadastro.endereco.cidade}&format=json`)
       .then((response) => {
         return response.json();
       })
       .then((geo) => {
         farmaciaCadastro.endereco.geolocalizacao.latitude = geo[0].lat;
         farmaciaCadastro.endereco.geolocalizacao.longitude = geo[0].lon;
-        console.log(geo)
         setMensagemCadastroGeo(true)
   
       });

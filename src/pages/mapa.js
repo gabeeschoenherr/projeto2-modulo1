@@ -27,9 +27,10 @@ function Mapa() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-
+        {/* tente nomear melhor as variáveis, ao invés de farmaciasMapa seria melhor farmácia, pois é um item da lista */}
         {farmaciasMapa.map((farmaciasMapa) => (
-          <Marker position={[farmaciasMapa.endereco.geolocalizacao.latitude, farmaciasMapa.endereco.geolocalizacao.longitude]}>
+          // todo item dentro do map precisa de uma key
+          <Marker key={farmaciasMapa.id} position={[farmaciasMapa.endereco.geolocalizacao.latitude, farmaciasMapa.endereco.geolocalizacao.longitude]}>
             <Popup>
               <h3>{farmaciasMapa.nomeFantasia}</h3>
               <p>{farmaciasMapa.razaoSocial}</p>

@@ -5,7 +5,8 @@ function ListaMedicamento(){
     const [listaMedicamento, setListaMedicamento] = useState([]);
     const [enviaListaMedicamento, setEnviaListaMedicamento] = useState();
     const [show, setShow] = useState(false);
-    const [busca, setBusca] = useState();
+    // lembre de inicializar as variáveis
+    const [busca, setBusca] = useState("");
     const [filtro, setFiltro] = useState (listaMedicamento);
   useEffect(() => {
     fetch("http://localhost:3001/medicamentos")
@@ -18,15 +19,13 @@ function ListaMedicamento(){
 
   useEffect(()=>{
     setFiltro(
+        // o filter já retorna o item, então não precisa ter um if que retorna o item
         listaMedicamento.filter(item => {
-            if(
-                (item.nomeMed.toLocaleLowerCase()).indexOf(busca.toLocaleLowerCase())!== -1){
-                    return item
-                }
-            
+            return (item.nomeMed.toLocaleLowerCase()).indexOf(busca.toLocaleLowerCase())!== -1   
         })
     )
   }, [busca])
+  
     return(
         <div>
             <Nav/>
@@ -37,9 +36,10 @@ function ListaMedicamento(){
             </div>
                 <div className="listamedicamentos">
                     
-                
+                {/* tente nomear melhor as variáveis... nesse caso, ao invés de listaMedicamento seria medicamento, pois é um item da lista  */}
                 {filtro.map(listaMedicamento =>(
-                    <div>
+                    // lebre-se que todo componente dentro de um map precisa de uma key
+                    <div key={listaMedicamento.id}>
                         <Modal enviaListaMedicamento={enviaListaMedicamento} onClose={() => setShow(false)} show={show}/>
                 <div className='continterno'>
                     

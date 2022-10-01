@@ -29,8 +29,8 @@ function Login() {
   useEffect(() => {
     loginDb.filter((item) => {
       if (
-        item.login == senhaDigitada.email &&
-        item.senha == senhaDigitada.senha
+        item.login === senhaDigitada.email &&
+        item.senha === senhaDigitada.senha
       ) {
         setLoginCorreto(true);
       }
@@ -58,7 +58,7 @@ function Login() {
         "Digite uma senha com números,letras e no mínimo 8 caracteres!"
       );
       setStatusLoginCor({ color: "red" });
-    } else if (loginCorreto == false) {
+    } else if (loginCorreto === false) {
       setStatusLogin("Digite uma senha e/ou e-mail válidos!");
       setStatusLoginCor({ color: "red" });
     } else {
